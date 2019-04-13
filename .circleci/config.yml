@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:lts-browsers
     steps:
       - checkout
+      - run: cd ./BitWorld
       - run: cd ./front-end
       - run: npm install
       - run: npm run-script build
