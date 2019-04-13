@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts-browsers
+    steps:
+      - checkout
+      - run: echo "Not CI/CD defined yet."
