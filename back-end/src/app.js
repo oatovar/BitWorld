@@ -17,6 +17,7 @@ const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
 const mongodb = require('./mongodb');
+const snapchat = require('./snapchat-auth');
 
 const app = express(feathers());
 
@@ -37,6 +38,7 @@ app.configure(express.rest());
 app.configure(socketio());
 
 app.configure(mongodb);
+app.configure(snapchat);
 
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
