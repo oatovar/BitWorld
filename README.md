@@ -5,7 +5,7 @@ BitWorld is an online social media application that brings in your favorite feat
 
 ## Technology Stack
  - Express.JS
- - Angular.JS
+ - Angular
  - Kubernetes
 
 ### Hosted on Google Cloud Platform
