@@ -1,5 +1,3 @@
-
-
 <mat-sidenav-container class="sidenav-container">
   <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -23,10 +21,10 @@
       </button> -->
       <span class="title mat-display-1 mat-typography">BitWorld</span>
     </mat-toolbar>
-    
+
     <!-- Add Content Here -->
     <div class="feed">
-          <app-bit-feed></app-bit-feed>
+      <router-outlet></router-outlet>
     </div>
 
     <div>
