@@ -13,6 +13,7 @@ export class BitPostComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

@@ -9,6 +9,7 @@ export class BitFeedComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
