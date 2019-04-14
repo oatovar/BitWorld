@@ -16,6 +16,7 @@ import {
   MatCardModule,
   MatInputModule,
 } from '@angular/material';
+import { HttpClient } from '@angular/common/http';
 import { BitFeedComponent } from './bit-feed/bit-feed.component';
 import { BitPostComponent } from './bit-post/bit-post.component';
 import { LoginComponent } from './login/login.component';
@@ -41,6 +42,7 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     FlexLayoutModule,
     MatInputModule,
+    HttpClient,
   ],
   providers: [],
   bootstrap: [AppComponent]
