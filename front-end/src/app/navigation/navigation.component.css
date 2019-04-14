@@ -22,3 +22,17 @@
   margin-top: 20px;
   /* border: red solid 3px; */
 }
+
+.title{
+  margin: auto;
+}
+
+button{
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background: yellow;
+  width: 40px;
+  height: 40px;
+}

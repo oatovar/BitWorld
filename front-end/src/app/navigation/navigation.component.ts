@@ -17,4 +17,8 @@ export class NavigationComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  addPost(event): void{
+    console.log("add post");
+  }
+
 }
