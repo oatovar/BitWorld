@@ -12,7 +12,7 @@ import { BitTextPost } from './models/bit-text-post';
 export class BitWorldService {
   constructor() { }
 
-  getPost(): Observable<BitTextPost[]>{
+  getPosts(): Observable<BitTextPost[]>{
     return of(mockPosts);
   }
 

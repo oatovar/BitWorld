@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { BitPost } from '../models/bit-post';
 
@@ -8,6 +8,8 @@ import { BitPost } from '../models/bit-post';
   styleUrls: ['./bit-post.component.css']
 })
 export class BitPostComponent implements OnInit {
+  @Input() bitPost: BitPost;
+
   posts: BitPost[];
 
   constructor() { }

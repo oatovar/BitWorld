@@ -1,10 +1,15 @@
 
 <mat-card-title-group>
   <mat-card class="bitpost-card">
-    <mat-card-title>Dank memes</mat-card-title>
-    <mat-card-subtitle>dankest in town</mat-card-subtitle>
-    <div>
-      This is the body of the post
-    </div>
+    <mat-card-title>{{ bitPost.title }}</mat-card-title>
+    <mat-card-content>
+      <p>
+        {{ bitPost.body }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions fxLayout="row">
+      <button mat-button> {{ bitPost.upbits }} UpBits </button>
+      <button mat-button> {{ bitPost.upbits }} DownBits </button>
+    </mat-card-actions>
   </mat-card>
 </mat-card-title-group>

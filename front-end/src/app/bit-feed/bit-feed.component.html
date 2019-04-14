@@ -1,2 +1,15 @@
-<app-bit-post>
-</app-bit-post>
+<ng-container *ngFor="let post of posts">
+    <mat-list-item> 
+        <app-bit-post [bitPost]="post" fxLayout="column"> </app-bit-post>    
+    </mat-list-item>
+</ng-container>
+
+<!-- <mat-list>
+    <mat-list-item *ngFor="let post of posts"> 
+        <app-bit-post [bitPost]="post" fxLayout="column"> </app-bit-post>    
+    </mat-list-item>
+</mat-list> -->
+<!-- <div *ngFor="let post of posts" class=posts>
+    <app-bit-post fxLayoutAlign="center" [bitPost]="post">
+    </app-bit-post>
+</div> -->
