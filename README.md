@@ -9,3 +9,6 @@ BitWorld is an online social media application that brings in your favorite feat
  - Kubernetes
 
 ### Hosted on Google Cloud Platform
+
+### Privacy Documentation
+https://www.freeprivacypolicy.com/privacy/view/16791fcb1daf496bc964d2ee30b5aaa0
