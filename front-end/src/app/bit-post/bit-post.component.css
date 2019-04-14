@@ -1,3 +1,14 @@
-mat-card-title-group, mat-card{
-    width: 100%;
+mat-card-title-group {
+    width: 75%;
+    margin: auto;
+}
+
+mat-card {
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }
