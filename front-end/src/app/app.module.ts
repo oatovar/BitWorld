@@ -7,16 +7,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatCardModule,
+  MatInputModule,
+} from '@angular/material';
 import { BitFeedComponent } from './bit-feed/bit-feed.component';
 import { BitPostComponent } from './bit-post/bit-post.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     BitFeedComponent,
-    BitPostComponent
+    BitPostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,8 @@ import { BitPostComponent } from './bit-post/bit-post.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
