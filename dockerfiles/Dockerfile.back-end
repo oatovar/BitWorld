@@ -1,0 +1,14 @@
+FROM node:latest
+
+WORKDIR /app
+COPY . .
+
+RUN npm install
+
+ENV BITWORLD_URL mongodb+srv://bitworld:FyzH8haFBlqOHoHH@cluster0-nv9s0.gcp.mongodb.net/BitWorld?retryWrites=true
+ENV SNAP_CLIENT_ID 8e8987e5-b303-4bea-8107-aba3f6cf6c91
+ENV SNAP_KEY jAiarmDDHvNv5ixQ9fApOGzZw4M2BW129jgEKRrl4fw
+
+EXPOSE 3030
+
+ENTRYPOINT MONGO=${BITWORLD_URL} SNAP_CLIENT_ID=${SNAP_CLIENT_ID} SNAP_CLIENT_SECRET=${SNAP_KEY} npm start
