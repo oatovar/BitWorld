@@ -54,7 +54,7 @@ module.exports = function (app) {
       // Make sure to persist access_token, refresh_token, and expires_in
       let accessToken = JSON.parse(body).access_token;     
       res.cookie('accessToken', accessToken);
-      res.send({
+      res.json({
         'status': 'Successfully authenticated.',
         'token': accessToken
       });
