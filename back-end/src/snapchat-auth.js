@@ -52,7 +52,12 @@ module.exports = function (app) {
     request(options, function (error, response, body) {
       // Handle success and error responses here
       // Make sure to persist access_token, refresh_token, and expires_in
-      res.send(response);
+      let accessToken = JSON.parse(body).access_token;     
+      res.cookie('accessToken', accessToken);
+      res.send({
+        'status': 'Successfully authenticated.',
+        'token': accessToken
+      });
     });
 
   });
